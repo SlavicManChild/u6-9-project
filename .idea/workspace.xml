@@ -1,11 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f607ba0-57e1-4a76-976d-11b9d1b91135" name="Changes" comment="" />
+    <list default="true" id="2f607ba0-57e1-4a76-976d-11b9d1b91135" name="Changes" comment="first commit but third cuz thing didnt save so i copu paseted" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -21,6 +31,10 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "onboarding.tips.debug.path": "C:/Users/Gregory/IdeaProjects/unit projhect but again/src/Main.java",
     "vue.rearranger.settings.migration": "true"
   }
@@ -33,12 +47,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1711336211841</updated>
-      <workItem from="1711336213600" duration="4000" />
+      <workItem from="1711336213600" duration="3081000" />
     </task>
+    <task id="LOCAL-00001" summary="first commit but third cuz thing didnt save so i copu paseted">
+      <created>1711339287023</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1711339287023</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit but third cuz thing didnt save so i copu paseted" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit but third cuz thing didnt save so i copu paseted" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

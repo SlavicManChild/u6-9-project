@@ -1,7 +1,8 @@
 
 public class ASCIIthings {
-
-    String[][][] 3darray = {zero, one, two, three, four, five, six, seven, eight, nine, addition, multiplication, equals, question};
+    static String[][][] threeDArray = {{{"zero"}, {"one"}, {"two"}}, {{"three"}, {"four"},
+            {"five"}}, {{"six"}, {"seven"}, {"eight"}}, {{"nine"}, {"addition"},
+            {"multiplication"}}, {{"equals"}, {"question"}}};
     
     static String[][] zero = {
             {"  #####  "},
@@ -155,7 +156,7 @@ public class ASCIIthings {
             {"    #    "}
     };
 
-    static String spacer = "                 ";
+    static String spacer = "     ";
 
 
 
@@ -169,10 +170,31 @@ public class ASCIIthings {
     }
 
     public static void printer(int intOne, int temp ,int intTwo){
-        printDigit();
+        printDigit(threeDArray[intOne]);
+        System.out.println(spacer);
+        printDigit(threeDArray[temp]);
+        System.out.println(spacer);
+        printDigit(threeDArray[intTwo]);
+        System.out.println(spacer);
+        printDigit(threeDArray[13]);
+        System.out.println(spacer);
+        printDigit(threeDArray[14]);
+
     }
     public static void printer(int intOne, int temp ,int intTwo, int intAnswer){
+        printDigit(threeDArray[intOne]);
+        System.out.println(spacer);
+        printDigit(threeDArray[temp]);
+        System.out.println(spacer);
+        printDigit(threeDArray[intTwo]);
+        System.out.println(spacer);
+        printDigit(threeDArray[13]);
+        System.out.println(spacer);
+        printDigit(threeDArray[int]);
+    }
 
+    public static void canoodle(int intAnswer){
+        // make int aswer as strig, take it apart into ints printDigits( em, and be jap usaodfhnasdadajk
     }
 }
 
