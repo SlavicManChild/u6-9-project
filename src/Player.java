@@ -5,9 +5,11 @@ public class Player {
     int extraGamesWon;
 
     int points;
-
-
     boolean extraGameAchieved;
+
+    Player(){
+        homeMenu();
+    }
 
     Scanner scan = new Scanner(System.in);
 

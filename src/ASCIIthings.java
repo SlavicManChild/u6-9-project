@@ -217,28 +217,43 @@ public class ASCIIthings {
     public static void printer(int intOne, int temp ,int intTwo){
         printDigit(threeDArray[intOne]);
         System.out.println(spacer);
+        if (temp == 0){
+            temp = 10;
+        }
+        else{
+            temp = 11;
+        }
         printDigit(threeDArray[temp]);
         System.out.println(spacer);
         printDigit(threeDArray[intTwo]);
         System.out.println(spacer);
-        printDigit(threeDArray[13]);
+        printDigit(threeDArray[12]);
         System.out.println(spacer);
-        printDigit(threeDArray[14]);
+        printDigit(threeDArray[13]);
         writeDigits(arrayList);
+        arrayList = new ArrayList<>();
 
-    // dont know how to use github well enough cuz i forgot
     }
     public static void printer(int intOne, int temp ,int intTwo, int intAnswer){
         printDigit(threeDArray[intOne]);
         System.out.println(spacer);
+        if (temp == 0){
+            temp = 10;
+        }
+        else{
+            temp = 11;
+        }
         printDigit(threeDArray[temp]);
         System.out.println(spacer);
         printDigit(threeDArray[intTwo]);
         System.out.println(spacer);
         printDigit(threeDArray[13]);
         System.out.println(spacer);
+        printDigit(threeDArray[12]);
+        System.out.println(spacer);
         canoodle(intAnswer);
         writeDigits(arrayList);
+        arrayList = new ArrayList<>();
     }
 
 
