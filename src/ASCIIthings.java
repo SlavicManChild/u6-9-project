@@ -218,10 +218,10 @@ public class ASCIIthings {
         printDigit(threeDArray[intOne]);
         System.out.println(spacer);
         if (temp == 0){
-            temp = 10;
+            temp = 11;
         }
         else{
-            temp = 11;
+            temp = 10;
         }
         printDigit(threeDArray[temp]);
         System.out.println(spacer);
@@ -238,10 +238,10 @@ public class ASCIIthings {
         printDigit(threeDArray[intOne]);
         System.out.println(spacer);
         if (temp == 0){
-            temp = 10;
+            temp = 11;
         }
         else{
-            temp = 11;
+            temp = 10;
         }
         printDigit(threeDArray[temp]);
         System.out.println(spacer);

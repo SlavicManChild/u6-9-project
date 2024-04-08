@@ -42,9 +42,8 @@ public class Game {
         ASCIIthings.printer(intOne, temp ,intTwo);
         int userAnswer = scan.nextInt();
         if (userAnswer == intAnswer){
-            System.out.println("coreect!");
+            System.out.println("Correct!");
             ASCIIthings.printer(intOne, temp ,intTwo, intAnswer);
-            counter++;
             return true;
         }
         else{
@@ -61,29 +60,54 @@ public class Game {
             if (counter == 0){
                 System.out.println("Level Zero");
                 System.out.println("the question: ");
-                generateEquation(levelZero);
+                if(generateEquation(levelZero)){
+                    counter ++;
+                }
+                else{
+                    return counter;
+                }
 
 
             }
             else if (counter == 1){
                 System.out.println("Level One");
                 System.out.println("the question: ");
-                generateEquation(levelOne);
+                if(generateEquation(levelOne)){
+                    counter ++;
+                }
+                else{
+                    return counter;
+                }
             }
             else if (counter == 2){
                 System.out.println("Level Two");
                 System.out.println("the question: ");
-                generateEquation(levelTwo);
+                if(generateEquation(levelTwo)){
+                    counter ++;
+                }
+                else{
+                    return counter;
+                }
             }
+
             else if (counter == 3){
                 System.out.println("Level Three");
                 System.out.println("the question: ");
-                generateEquation(levelThree);
+                if(generateEquation(levelThree)){
+                    counter ++;
+                }
+                else{
+                    return counter;
+                }
             }
-            else if (counter == 4){
+            else if (counter == 4) {
                 System.out.println("Level Four");
                 System.out.println("the question: ");
-                generateEquation(levelFour);
+                if (generateEquation(levelFour)) {
+                    counter++;
+                } else {
+                    return counter;
+                }
             }
         }
         return 0;
