@@ -1,7 +1,8 @@
-
+import java.util.ArrayList;
 public class ASCIIthings {
 
-    
+
+
     static String[][] zero = {
             {"  #####  "},
             {" #     # "},
@@ -11,6 +12,8 @@ public class ASCIIthings {
             {" #     # "},
             {"  #####  "}
     };
+
+
 
 
     static String[][] one = {
@@ -24,6 +27,8 @@ public class ASCIIthings {
     };
 
 
+
+
     static String[][] two = {
             {"  #####  "},
             {" #     # "},
@@ -33,6 +38,8 @@ public class ASCIIthings {
             {"#        "},
             {" ####### "}
     };
+
+
 
 
     static String[][] three = {
@@ -46,6 +53,8 @@ public class ASCIIthings {
     };
 
 
+
+
     static String[][] four = {
             {"#       #"},
             {"#       #"},
@@ -55,6 +64,8 @@ public class ASCIIthings {
             {"        #"},
             {"        #"}
     };
+
+
 
 
     static String[][] five = {
@@ -68,6 +79,8 @@ public class ASCIIthings {
     };
 
 
+
+
     static  String[][] six = {
             {"  #####  "},
             {" #     # "},
@@ -77,6 +90,8 @@ public class ASCIIthings {
             {" #    #  "},
             {"  ####   "}
     };
+
+
 
 
     static String[][] seven = {
@@ -90,6 +105,8 @@ public class ASCIIthings {
     };
 
 
+
+
     static String[][] eight = {
             {"  #####  "},
             {" #     # "},
@@ -99,6 +116,8 @@ public class ASCIIthings {
             {" #     # "},
             {"  #####  "}
     };
+
+
 
 
     static  String[][] nine = {
@@ -112,6 +131,8 @@ public class ASCIIthings {
     };
 
 
+
+
     static  String[][] addition = {
             {"   ###   "},
             {"   ###   "},
@@ -122,6 +143,8 @@ public class ASCIIthings {
             {"   ###   "},
             {"   ###   "},
     };
+
+
 
 
     static String[][] multiplication = {
@@ -144,6 +167,8 @@ public class ASCIIthings {
     };
 
 
+
+
     static String[][] question = {
             {"   ##    "},
             {"  #   #  "},
@@ -156,18 +181,38 @@ public class ASCIIthings {
     static String[][][] threeDArray = {zero, one, two, three, four, five, six, seven, eight, nine, addition, multiplication, equals, question};
 
 
+
+
     static String spacer = "     ";
 
 
 
-    public static void printDigit(String[][] digit) {
-        for (String[] row : digit) {
-            for (String symbol : row) {
-                System.out.println(symbol);
+
+
+
+    //    public static void printDigit(String[][] digit) {
+//        for (String[] row : digit) {
+//            for (String symbol : row) {
+//                System.out.println(symbol);
+//            }
+//        }
+//        System.out.println();
+//    }
+    static void writeDigits(ArrayList<String[][]> digits) {
+        for (int row = 0; row < digits.get(0).length; row++) {
+            for (String[][] digit : digits) {
+                System.out.print(digit[row][0] + " ");
             }
+            System.out.println();
         }
-        System.out.println();
     }
+
+
+    static ArrayList<String[][]> arrayList = new ArrayList<>();
+    static void printDigit(String[][] tempDoubleArr){
+        arrayList.add(tempDoubleArr);
+    }
+
 
     public static void printer(int intOne, int temp ,int intTwo){
         printDigit(threeDArray[intOne]);
@@ -179,7 +224,9 @@ public class ASCIIthings {
         printDigit(threeDArray[13]);
         System.out.println(spacer);
         printDigit(threeDArray[14]);
+        writeDigits(arrayList);
 
+    // dont know how to use github well enough cuz i forgot
     }
     public static void printer(int intOne, int temp ,int intTwo, int intAnswer){
         printDigit(threeDArray[intOne]);
@@ -190,27 +237,62 @@ public class ASCIIthings {
         System.out.println(spacer);
         printDigit(threeDArray[13]);
         System.out.println(spacer);
-        printDigit(threeDArray[intAnswer]);
+        canoodle(intAnswer);
+        writeDigits(arrayList);
     }
+
 
     public static void canoodle(int theInteger) {
         int[] digits = new int[String.valueOf(theInteger).length()];
         int index = digits.length - 1;
+
 
         while (theInteger > 0) {
             digits[index--] = theInteger % 10;
             theInteger /= 10;
         }
 
+
         for (int i : digits){
             printDigit(threeDArray[i]);
         }
     }
 
+
     public static void main(String[] args){
-        canoodle(123);
+        // Test 1: Printing individual digits
+        System.out.println("Printing individual digits:");
+        printDigit(zero);
+        printDigit(one);
+        printDigit(two);
+        printDigit(three);
+        printDigit(four);
+        printDigit(five);
+        printDigit(six);
+        printDigit(seven);
+        printDigit(eight);
+        printDigit(nine);
+        System.out.println();
+
+        // Test 2: Printing addition operation
+        System.out.println("Printing addition operation:");
+        printer(1, 10, 1, 2); // 1 + 1 = 2
+        System.out.println();
+
+        // Test 3: Printing multiplication operation
+        System.out.println("Printing multiplication operation:");
+        printer(2, 11, 2, 4); // 2 * 2 = 4
+        System.out.println();
+
+        // Test 4: Printing question mark
+        System.out.println("Printing question mark:");
+        printDigit(question);
     }
+
 }
+
+
+
 
 
 
