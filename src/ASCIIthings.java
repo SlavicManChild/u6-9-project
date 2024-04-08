@@ -259,35 +259,7 @@ public class ASCIIthings {
     }
 
 
-    public static void main(String[] args){
-        // Test 1: Printing individual digits
-        System.out.println("Printing individual digits:");
-        printDigit(zero);
-        printDigit(one);
-        printDigit(two);
-        printDigit(three);
-        printDigit(four);
-        printDigit(five);
-        printDigit(six);
-        printDigit(seven);
-        printDigit(eight);
-        printDigit(nine);
-        System.out.println();
 
-        // Test 2: Printing addition operation
-        System.out.println("Printing addition operation:");
-        printer(1, 10, 1, 2); // 1 + 1 = 2
-        System.out.println();
-
-        // Test 3: Printing multiplication operation
-        System.out.println("Printing multiplication operation:");
-        printer(2, 11, 2, 4); // 2 * 2 = 4
-        System.out.println();
-
-        // Test 4: Printing question mark
-        System.out.println("Printing question mark:");
-        printDigit(question);
-    }
 
 }
 
