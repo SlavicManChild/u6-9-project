@@ -7,24 +7,24 @@ public class Game {
 
 
     Random rand = new Random();
-    int[][] levelZero = {{1, 2, 3, 4}, {1, 2, 0, 1}};
+    private final int[][] levelZero = {{1, 2, 3, 4}, {1, 2, 0, 1}};
 
 
-    int[][] levelOne = {{1, 2, 3},
+    private final int[][] levelOne = {{1, 2, 3},
             {1, 2, 3}};
 
 
-    int[][] levelTwo = {{10, 20, 30},
+    private final int[][] levelTwo = {{10, 20, 30},
             {5, 3, 7}};
 
 
-    int[][] levelThree = {{15, 17, 32, 7},
-            {61, 67, 53, 19}};
-    int[][] levelFour = {{15, 33, 41},
+    private final int[][] levelThree = {{15, 17, 32, 7},
+            {61, 67, 53, 19}, {87, 23, 3, 9}};
+    private final int[][] levelFour = {{15, 33, 41},
             {17, 56, 81}};
-    public void startGame(){
+    public int startGame(){
         int counter = 0;
-        playThrough();
+        return playThrough();
     }
 
 
@@ -110,7 +110,7 @@ public class Game {
                 }
             }
         }
-        return 0;
+        return 5;
     }
 
 

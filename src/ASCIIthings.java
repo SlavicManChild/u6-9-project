@@ -190,14 +190,7 @@ public class ASCIIthings {
 
 
 
-    //    public static void printDigit(String[][] digit) {
-//        for (String[] row : digit) {
-//            for (String symbol : row) {
-//                System.out.println(symbol);
-//            }
-//        }
-//        System.out.println();
-//    }
+
     static void writeDigits(ArrayList<String[][]> digits) {
         for (int row = 0; row < digits.get(0).length; row++) {
             for (String[][] digit : digits) {
@@ -215,7 +208,12 @@ public class ASCIIthings {
 
 
     public static void printer(int intOne, int temp ,int intTwo){
-        printDigit(threeDArray[intOne]);
+        if (intOne > 9){
+            canoodle(intOne);
+        }
+        else{
+            printDigit(threeDArray[intOne]);
+        }
         System.out.println(spacer);
         if (temp == 0){
             temp = 11;
@@ -225,7 +223,12 @@ public class ASCIIthings {
         }
         printDigit(threeDArray[temp]);
         System.out.println(spacer);
-        printDigit(threeDArray[intTwo]);
+        if (intTwo > 9){
+            canoodle(intTwo);
+        }
+        else{
+            printDigit(threeDArray[intTwo]);
+        }
         System.out.println(spacer);
         printDigit(threeDArray[12]);
         System.out.println(spacer);
@@ -235,7 +238,12 @@ public class ASCIIthings {
 
     }
     public static void printer(int intOne, int temp ,int intTwo, int intAnswer){
-        printDigit(threeDArray[intOne]);
+        if (intOne > 9){
+            canoodle(intOne);
+        }
+        else{
+            printDigit(threeDArray[intOne]);
+        }
         System.out.println(spacer);
         if (temp == 0){
             temp = 11;
@@ -245,7 +253,12 @@ public class ASCIIthings {
         }
         printDigit(threeDArray[temp]);
         System.out.println(spacer);
-        printDigit(threeDArray[intTwo]);
+        if (intTwo > 9){
+            canoodle(intTwo);
+        }
+        else{
+            printDigit(threeDArray[intTwo]);
+        }
         System.out.println(spacer);
         printDigit(threeDArray[13]);
         System.out.println(spacer);
